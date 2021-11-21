@@ -1,5 +1,5 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 const firebaseConfig = {
     apiKey: "AIzaSyBDmKm_WBAdap2fFIRNeVkBWCjCBIqwxFw",
     authDomain: "vuejs-firebase-d24d6.firebaseapp.com",
@@ -9,5 +9,5 @@ const firebaseConfig = {
     appId: "1:3632533542:web:fb911b07d5b57f5041d6e7"
   };
 firebase.initializeApp(firebaseConfig);
-const projectFirestore = firebase.firestore();
-export {projectFirestore};
+const db = firebase.firestore();
+export {db}
